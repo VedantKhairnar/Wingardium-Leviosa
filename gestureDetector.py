@@ -1,17 +1,44 @@
 import cv2
-from pynput.keyboard import Key, Controller
+from pynput.keyboard import Key, Controller, KeyCode
 
 face_cascade = cv2.CascadeClassifier('haarcascade\\fist.xml')
 eye_cascade = cv2.CascadeClassifier('haarcascade\\aGest.xml')
 hq = []
 vq = []
 
+"""
+For Virtual Key Codes: https://docs.microsoft.com/en-us/windows/win32/inputdev/virtual-key-codes
+Gesture Options :
+1) win+tab : task view
+2) win+m : minimize all tabs
+3) alt+ tab : change window
+4) ctrl+shift+esc : open task manager
+5) volume up and down
+6) 
+"""
+
 
 def instruct(l):
     keyboard = Controller()
-    print(l)
-    if l[1][0] - l[1][-1] > 80:  # y coordinate increse : hands up
-        # Opens Task Manager
+    # print(l)
+    # print(l[1][0] - l[1][-1])
+    if l[1][0] - l[1][-1] > 80:  # y coordinate increse : fist up
+        # Tab View
+        keyboard.press(KeyCode.from_vk(0x5B))  # win
+        keyboard.press(Key.tab)
+        keyboard.release(KeyCode.from_vk(0x5B))
+        keyboard.release(Key.tab)
+
+    if l[1][0] - l[1][-1] < -80:  # y coordinate decrease : fist down
+        # minimize all windows
+        keyboard.press(KeyCode.from_vk(0x5B))
+        keyboard.press(KeyCode.from_vk(0x4D))
+        keyboard.release(KeyCode.from_vk(0x5B))
+        keyboard.release(KeyCode.from_vk(0x4D))
+
+    # print(l[0][0] - l[0][-1])
+    if l[0][0] - l[0][-1] > 80:  # x coordinate decrese : fist left
+        # open task manager
         keyboard.press(Key.ctrl)
         keyboard.press(Key.shift_l)
         keyboard.press(Key.esc)
@@ -19,11 +46,12 @@ def instruct(l):
         keyboard.release(Key.shift_l)
         keyboard.release(Key.esc)
 
-    if l[1][0] - l[1][-1] < -80:
+    if l[0][0] - l[0][-1] < -80:  # y coordinate decrease : fist right
+        # change window
         keyboard.press(Key.alt)
-        keyboard.press(Key.f4)
+        keyboard.press(Key.tab)
         keyboard.release(Key.alt)
-        keyboard.release(Key.f4)
+        keyboard.release(Key.tab)
 
 
 def cameraWork():
@@ -50,7 +78,7 @@ def cameraWork():
 
             instruct([hq, vq])
 
-            print(x, y, w, h)
+            # print(x, y, w, h)
             cv2.rectangle(img, (x, y), (x + w, y + h), (255, 255, 0), 2)
             roi_gray = gray[y:y + h, x:x + w]
             roi_color = img[y:y + h, x:x + w]
@@ -74,4 +102,10 @@ def main():
 
 if __name__ == '__main__':
     print("While giving instructions, hold fist for 3 seconds")
+    print("""
+    y coordinate increse : fist up : Tab View 
+    y coordinate decrease : fist down : minimize all windows 
+    x coordinate decrese : fist left : open task manager
+    y coordinate decrease : fist right : change window               
+    """)
     main()
