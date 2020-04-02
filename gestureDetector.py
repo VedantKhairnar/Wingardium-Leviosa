@@ -24,6 +24,7 @@ def instruct(l):
     # print(l[1][0] - l[1][-1])
     if l[1][0] - l[1][-1] > 80:  # y coordinate increse : fist up
         # Tab View
+        print("Entering Tab View")
         keyboard.press(KeyCode.from_vk(0x5B))  # win
         keyboard.press(Key.tab)
         keyboard.release(KeyCode.from_vk(0x5B))
@@ -31,6 +32,7 @@ def instruct(l):
 
     if l[1][0] - l[1][-1] < -80:  # y coordinate decrease : fist down
         # minimize all windows
+        print("Minimizing all windows")
         keyboard.press(KeyCode.from_vk(0x5B))
         keyboard.press(KeyCode.from_vk(0x4D))
         keyboard.release(KeyCode.from_vk(0x5B))
@@ -39,6 +41,7 @@ def instruct(l):
     # print(l[0][0] - l[0][-1])
     if l[0][0] - l[0][-1] > 80:  # x coordinate decrese : fist left
         # open task manager
+        print("Opening Task Manager")
         keyboard.press(Key.ctrl)
         keyboard.press(Key.shift_l)
         keyboard.press(Key.esc)
@@ -48,6 +51,7 @@ def instruct(l):
 
     if l[0][0] - l[0][-1] < -80:  # y coordinate decrease : fist right
         # change window
+        print("Change Window")
         keyboard.press(Key.alt)
         keyboard.press(Key.tab)
         keyboard.release(Key.alt)
@@ -97,10 +101,6 @@ def cameraWork():
 
 
 def main():
-    cameraWork()
-
-
-if __name__ == '__main__':
     print("While giving instructions, hold fist for 3 seconds")
     print("""
     y coordinate increse : fist up : Tab View 
@@ -108,4 +108,8 @@ if __name__ == '__main__':
     x coordinate decrese : fist left : open task manager
     y coordinate decrease : fist right : change window               
     """)
+    cameraWork()
+
+
+if __name__ == '__main__':
     main()
