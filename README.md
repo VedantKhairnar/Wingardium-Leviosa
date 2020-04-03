@@ -8,7 +8,8 @@
 [![GitHub](https://img.shields.io/github/license/VedantKhairnar/Wingardium-Leviosa.svg)](https://choosealicense.com/licenses/mit)
 [![Say Thanks!](https://img.shields.io/badge/Say-Thanks!-yellow.svg)](https://vedantkhairnar.ml)
 [![HitCount](http://hits.dwyl.io/VedantKhairnar/Wingardium-Leviosa.svg)](http://hits.dwyl.io/VedantKhairnar/Wingardium-Leviosa)
- 
+![Issues](https://img.shields.io/github/issues/VedantKhairnar/Wingardium-Leviosa)
+![PRsWelcome](https://img.shields.io/badge/PRs-welcome-informational)
 #### Dedicated to my soulmate...a PotterHead
 
 ### Computer System Control using gestures
