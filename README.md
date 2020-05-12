@@ -24,7 +24,7 @@ Using the ability that the whole system can be controlled using Keyboard.
     y coordinate increase : fist up : Tab View 
     y coordinate decrease : fist down : minimize all windows 
     x coordinate decrese : fist left : open task manager
-    y coordinate decrease : fist right : change window 
+    x coordinate decrease : fist right : change window 
     
 #### Libraries Used :
     
