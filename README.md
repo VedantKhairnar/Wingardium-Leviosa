@@ -63,5 +63,8 @@ For various Virtual-Key Codes, click [here](https://docs.microsoft.com/en-us/win
     Improve the Efficieny using Deep Learning (specifically trained )
     
 For Any Queries, connect me :
+
+[![](https://sourcerer.io/fame/VedantKhairnar/VedantKhairnar/Wingardium-Leviosa/images/0)](https://sourcerer.io/fame/VedantKhairnar/VedantKhairnar/Wingardium-Leviosa/links/0)[![](https://sourcerer.io/fame/VedantKhairnar/VedantKhairnar/Wingardium-Leviosa/images/1)](https://sourcerer.io/fame/VedantKhairnar/VedantKhairnar/Wingardium-Leviosa/links/1)[![](https://sourcerer.io/fame/VedantKhairnar/VedantKhairnar/Wingardium-Leviosa/images/2)](https://sourcerer.io/fame/VedantKhairnar/VedantKhairnar/Wingardium-Leviosa/links/2)[![](https://sourcerer.io/fame/VedantKhairnar/VedantKhairnar/Wingardium-Leviosa/images/3)](https://sourcerer.io/fame/VedantKhairnar/VedantKhairnar/Wingardium-Leviosa/links/3)[![](https://sourcerer.io/fame/VedantKhairnar/VedantKhairnar/Wingardium-Leviosa/images/4)](https://sourcerer.io/fame/VedantKhairnar/VedantKhairnar/Wingardium-Leviosa/links/4)[![](https://sourcerer.io/fame/VedantKhairnar/VedantKhairnar/Wingardium-Leviosa/images/5)](https://sourcerer.io/fame/VedantKhairnar/VedantKhairnar/Wingardium-Leviosa/links/5)[![](https://sourcerer.io/fame/VedantKhairnar/VedantKhairnar/Wingardium-Leviosa/images/6)](https://sourcerer.io/fame/VedantKhairnar/VedantKhairnar/Wingardium-Leviosa/links/6)[![](https://sourcerer.io/fame/VedantKhairnar/VedantKhairnar/Wingardium-Leviosa/images/7)](https://sourcerer.io/fame/VedantKhairnar/VedantKhairnar/Wingardium-Leviosa/links/7)
+
 [Vedant Khairnar](http://vedantkhairnar.ml/)
 
